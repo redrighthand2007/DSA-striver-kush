@@ -23,6 +23,7 @@ void freq1(int arr[], int n)
 
     cout << " frequency of occurance of " << tasknum << " is: " << hash[tasknum] << endl;
 }
+//nothing
 void freq2(string s)
 {
 
@@ -82,7 +83,7 @@ int main()
 
     //nothing
 
-    
+
     // int n;
     // cout<<"enter array size:";
     // cin>>n;
