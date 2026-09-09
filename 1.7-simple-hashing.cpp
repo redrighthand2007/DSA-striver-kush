@@ -68,13 +68,21 @@ int main()
     // }
     // cout<<"calling function...."<<endl;
     // freq1(arr,num)
-    // sfbhvjsgdgfhsfd
+
+
+
+
+
     //  string s;
     //  cout<<"enter a sample string: "<<endl;
     //  cin>>s;
     //  cout<<"calling function....."<<endl;
     //  freq2(s);
 
+
+    //nothing
+
+    
     // int n;
     // cout<<"enter array size:";
     // cin>>n;
