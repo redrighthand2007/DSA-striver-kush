@@ -1,55 +1,62 @@
-#include<bits/stdc++.h>
-//#include<functional>  //for hash use
-//#include<string>      //for string use
-//#include<unordered_map> //for hashtables use
-//#include<unordered_set> //for hashtables use
+#include <bits/stdc++.h>
+// #include<functional>  //for hash use
+// #include<string>      //for string use
+// #include<unordered_map> //for hashtables use
+// #include<unordered_set> //for hashtables use
 using namespace std;
 
-void freq1(int arr[], int n){
+void freq1(int arr[], int n)
+{
 
     int tasknum;
-    cout<<"enter the target finding number: ";
-    cin>>tasknum;
+    cout << "enter the target finding number: ";
+    cin >> tasknum;
 
-    int hash[50]={0};
-    for(int i=0;i<n;i++){  // precomputation...
-        if(arr[i]>=0 && arr[i]<50){
+    int hash[50] = {0};
+    for (int i = 0; i < n; i++)
+    { // precomputation...
+        if (arr[i] >= 0 && arr[i] < 50)
+        {
             hash[arr[i]]++;
         }
     }
 
-    cout<<" frequency of occurance of "<<tasknum<<" is: "<<hash[tasknum]<<endl;
+    cout << " frequency of occurance of " << tasknum << " is: " << hash[tasknum] << endl;
 }
-void freq2(string s){
+void freq2(string s)
+{
 
     char tasknum;
-    cout<<"enter finding character: ";
-    cin>>tasknum;
+    cout << "enter finding character: ";
+    cin >> tasknum;
 
-    int hash[26]={0};
-    
-    for(int i=0;i<s.size();i++){  // precomputation...
-        if(s[i]>='a' && s[i]<='z'){
-            hash[s[i]-'a']++;
+    int hash[26] = {0};
+
+    for (int i = 0; i < s.size(); i++)
+    { // precomputation...
+        if (s[i] >= 'a' && s[i] <= 'z')
+        {
+            hash[s[i] - 'a']++;
         }
     }
 
-    cout<<" frequency of occurance of "<<tasknum<<" is: "<<hash[tasknum-97]<<endl;
-    
+    cout << " frequency of occurance of " << tasknum << " is: " << hash[tasknum - 97] << endl;
 }
-void freq3(int n,int arr[]){
+void freq3(int n, int arr[])
+{
     int k;
-    cout<<"enter target number :";
-    cin>>k;
-    map<int,int> mapp;
-    for(int i=0;i<n;i++){
+    cout << "enter target number :";
+    cin >> k;
+    map<int, int> mapp;
+    for (int i = 0; i < n; i++)
+    {
         mapp[arr[i]]++;
     }
-    cout<<"frequency of occurance of "<<k<<" is: "<<mapp[k]<<endl;
+    cout << "frequency of occurance of " << k << " is: " << mapp[k] << endl;
 }
 
-int main(){
-
+int main()
+{
 
     // int num;
     // cout<<"enter size of array of int: ";
@@ -60,15 +67,13 @@ int main(){
     //     cin>>arr[i];
     // }
     // cout<<"calling function...."<<endl;
-    // freq1(arr,num);
-
-
-    // string s;
-    // cout<<"enter a sample string: "<<endl;
-    // cin>>s;
-    // cout<<"calling function....."<<endl;
-    // freq2(s);
-
+    // freq1(arr,num)
+    // sfbhvjsgdgfhsfd
+    //  string s;
+    //  cout<<"enter a sample string: "<<endl;
+    //  cin>>s;
+    //  cout<<"calling function....."<<endl;
+    //  freq2(s);
 
     // int n;
     // cout<<"enter array size:";
@@ -79,7 +84,6 @@ int main(){
     // }
     // cout<<"calling function..."<<endl;
     // freq3(n,arr);
-
 
     return 0;
 }
