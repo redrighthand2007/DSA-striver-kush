@@ -47,6 +47,5 @@ int main(){
     secondlargest();
     secondsmallest();
     
-
     return 0;
 }
